@@ -5,14 +5,14 @@ Why [fastAPI](https://fastapi.tiangolo.com/) over flask? Read [this article](htt
 
 ## Docker build and run
 ```
-docker build -t webapp .
+docker build -t luxapp .
 docker run -p 8000:8000 -t -i luxapp
 ```
 Then visit [http://127.0.0.1:8000/](http://127.0.0.1:8000/). The docs are at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
 
 ## Development in venv
-- `python3.7 -m venv venv`
-- `source venv/bin/activate`
-- `pip3 install -r requirements.txt`
+- `python3 -m venv luxenv`
+- `source luxenv/bin/activate`
+- `pip3 freeze >  requirements.txt`
 - `uvicorn main:app --reload`
 - [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
