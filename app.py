@@ -1,3 +1,5 @@
-name = "Lux Academy"
+name = "Lux Academy - By Kennedy Magoto"
 
-print(f"hello everyone welcome to {name}")
+print(f"Hello everyone welcome to {name}")
+
+prinf("This is a simple Python app that has been built using the FastAPI web framework and Docker.\n The app is a basic application, as you can see.")
