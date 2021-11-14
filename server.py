@@ -6,11 +6,7 @@ app = FastAPI()
 
 @app.get("/")
 async def read_root():
-    return { from pystrich.datamatrix import DataMatrixEncoder
-
-encoder = DataMatrixEncoder('This is a DataMatrix.')
-encoder.save('./datamatrix_test.png')
-print(encoder.get_ascii()) } 
+    return { "Lux app": "Welcome to Lux app, developed by Kennedy Magoto" } 
 
 @app.post("/login/")
 async def login(username: str = Form(...), password: str = Form(...)):
